@@ -1,0 +1,30 @@
+timeline-head {
+  height: 65px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  .timeline-head {
+    background: #ffffff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    width: 100%;
+  }
+  .tabs-item {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    left: 18px;
+    position: absolute;
+    top: 33px;
+  }
+  .active-tab {
+    color: #79B7F5;
+    margin-right: 17px;
+    text-align: center;
+  }
+  .inactive-tab {
+    color: #BBBBBB;
+    margin-right: 17px;
+  }
+}

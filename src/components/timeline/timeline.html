@@ -1,0 +1,25 @@
+<!-- Generated template for the TimelineComponent component -->
+<div id="timeline-component">
+  <timeline-head></timeline-head>
+  <ion-slides (ionSlideDidChange)="slideChange()">
+    <ion-slide>
+      <tweet *ngFor="let tweet of tweets"></tweet>
+      <!-- <div class="timeline t1">
+        timeline1
+      </div>
+      <div class="timeline t1-2" style="color: white">
+        timeline1-2
+      </div> -->
+    </ion-slide>
+    <ion-slide>
+      <tweet *ngFor="let tweet of tweets"></tweet>
+      <!-- <div class="timeline t2">
+        timeline2
+      </div> -->
+    </ion-slide>
+  </ion-slides>
+
+  <!-- <div class="tweets">
+    <tweet *ngFor="let tweet of tweets"></tweet>
+  </div> -->
+</div>
