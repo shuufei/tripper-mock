@@ -1,5 +1,6 @@
 <!-- Generated template for the TimelineComponent component -->
-<div id="timeline-component">
+<div id="timeline-component" class="timeline-component">
+  <div class="background-white"></div>
   <timeline-head></timeline-head>
   <ion-slides (ionSlideDidChange)="slideChange()">
     <ion-slide>
@@ -18,7 +19,7 @@
       </div> -->
     </ion-slide>
   </ion-slides>
-  <action-button></action-button>
+  <action-button (openModal)="openModal()"></action-button>
 
   <!-- <div class="tweets">
     <tweet *ngFor="let tweet of tweets"></tweet>

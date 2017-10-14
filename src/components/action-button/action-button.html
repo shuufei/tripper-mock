@@ -1,6 +1,8 @@
 <!-- Generated template for the ActionButtonComponent component -->
 <div class="action-button-wrapper">
   <div class="action-button" [@touchActionButton]="isActive" (click)="touchedActionButton()"></div>
-  <div class="action-sub-button post-action-button"></div>
-  <div class="action-sub-button switch-action-button"></div>
+  <div class="action-sub-button switch-action-button" [@activeSwitchButton]="isActive"></div>
+  <div class="action-sub-button post-action-button" [@activePostButton]="isActive" (click)="navigateToPost()">
+    <ion-icon ios="logo-twitter"></ion-icon>
+  </div>
 </div>

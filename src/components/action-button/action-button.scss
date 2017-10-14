@@ -1,18 +1,28 @@
 action-button {
   .action-button-wrapper {
-    align-items: center;
-    -webkit-align-items: center;
-    display: flex;
-    display: -webkit-flex;
+    // -webkit-align-items: center; /* Safari用 */
+    // align-items: center;
+    // display: -webkit-flex; /* Safari用 */
+    // display: flex;
+    // -webkit-justify-content: center; /* Safari用 */
+    // justify-content: center;
+    // align-items: center;
+    // -webkit-align-items: center;
+    // display: flex;
+    // display: -webkit-flex;
     // flex-direction: column-reverse;
-    justify-content: center;
-    -webkit-justify-content: center;
+    // justify-content: center;
+    // -webkit-justify-content: center;
+    // position: relative;
   }
   .action-button {
     background: #79B7F5;
     border-radius: 50%;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
     height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
     width: 60px;
     z-index: 10;
   }
@@ -21,12 +31,25 @@ action-button {
     border-radius: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
     height: 55px;
-    margin-bottom: 13px;
+    left: 2.5px;
     position: absolute;
+    text-align: center;
+    top: 2.5px;
     width: 55px;
   }
   .post-action-button {
+    align-items: center;
+    -webkit-align-items: center;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    -webkit-justify-content: center;
     z-index: 1;
+    ion-icon {
+      color: #79B7F5;
+      font-size: 28px;
+    }
   }
   .switch-action-button {
     z-index: 2;

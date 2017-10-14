@@ -60,4 +60,11 @@ export class TimelineComponent {
     console.log('Current index is', currentIndex);
   }
 
+  openModal() {
+    console.log('=== open modal ===');
+    let el = document.getElementsByClassName('timeline-component')[0];
+    console.log(el);
+    el.classList.add('go-to-back');
+  }
+
 }
